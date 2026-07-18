@@ -7,17 +7,13 @@ let allProducts = [];
 let currentProducts = [];
 
 let currentPage = 1;
-const productsPerPage = 6;
-
-// =======================
-// Loading Skeleton
-// =======================
+const productsPerPage = 5;
 
 function showSkeleton() {
 
     productContainer.innerHTML = "";
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
 
         const skeleton = document.createElement("div");
 
@@ -34,10 +30,6 @@ function showSkeleton() {
     }
 
 }
-
-// =======================
-// Wishlist Functions
-// =======================
 
 function getWishlist() {
 
@@ -73,9 +65,6 @@ function toggleWishlist(product) {
 
 }
 
-// =======================
-// Fetch Products
-// =======================
 
 async function fetchProducts() {
 
@@ -107,9 +96,6 @@ async function fetchProducts() {
 
 }
 
-// =======================
-// Display Products
-// =======================
 
 function displayProducts(products) {
 
@@ -196,9 +182,6 @@ searchInput.addEventListener("input", function () {
 
 });
 
-// =======================
-// Fetch Categories
-// =======================
 
 async function fetchCategories() {
 

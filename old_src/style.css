@@ -64,13 +64,14 @@ header{
 }
 
 #search{
-    width:100%;
+    width:30%;
     max-width:400px;
     padding:12px;
     font-size:16px;
     border:1px solid #ccc;
     border-radius:8px;
     outline:none;
+    float :left;
 }
 .filter-container{
     width:90%;
@@ -160,4 +161,20 @@ header{
 
 a{
     float:right;
+}
+
+
+.nav-icons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav-icons i{
+    font-size:24px;
+    cursor:pointer;
+}
+
+.nav-icons i:hover{
+    color:#007bff;
 }
